@@ -1,0 +1,229 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 0;
+    line-height: 1;
+
+}
+ol,ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+
+/*Sección Menu*/
+
+
+section.menu {
+   display: flex;
+   justify-content: space-around;
+}
+
+.menu__header {
+    display: flex;
+    align-items: baseline;
+}
+   
+nav {
+    display: flex; 
+}
+
+.menu__list {
+    display: flex;
+}
+
+/*Sección Title*/
+
+section.title{
+    display: flex;
+}
+
+.title__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.title__network {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+/*Sección About*/
+
+section.about{
+
+}
+.skills, .hobbies, .academic {
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills__title, .hobbies__title, .academic__title, .formcontato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__line, .hobbies__line, .academic__courses, .formcontato__contacto {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.experiencie__box  {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.experiencie__box:nth-of-type(2), .experiencie__box:nth-of-type(4) {
+    flex-direction: row-reverse;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button { 
+    font-family: Raleway;
+    margin-bottom: 10px;
+    height: 67px;
+    background: #2A7AE4;
+    border: 1px;
+    padding: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.78px;
+    text-align: center;
+    color: #FFFFFF;
+    }   
+
+
+.experiencie__info {
+    margin: 8px;
+}
+
+
+
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+
+}
+
+/* experiencia*/
+
+section.experience{
+
+}
+
+/*Contacto*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
