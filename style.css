@@ -15,8 +15,6 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
-    margin-left: 80px;
-    margin-right: 80px;
     padding: 0;
     line-height: 1;
 
@@ -61,16 +59,17 @@ nav {
 
 .menu__list {
     display: flex;
+    gap: 32px;
 }
 
 /*Sección Title*/
 
 section.title{
-    display: flex;
+    display: inline-flex;
 }
 
 .title__container {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
 }
 
@@ -82,9 +81,11 @@ section.title{
 
 .title__network {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    padding: 0px;
+}
+
+.title__network__item {
+    margin-right: 30px;
 }
 
 /*Sección About*/
@@ -93,7 +94,7 @@ section.about{
 
 }
 .skills, .hobbies, .academic {
-    background-color: darkgrey;
+    background-color:inherit;
     display: flex;
     flex-direction: column;
 }
@@ -123,12 +124,22 @@ section.about{
 .formcontato__form {
     display: flex;
     flex-direction: column;
+}
+
+.formcontato__botao {
+    display: flex;
     align-items: flex-start;
 }
+
+.formcontato__input ::placeholder {
+    color: #81e4f7;
+}
+
 
 .footer {
     display: flex;
     justify-content: space-evenly;
+    background-color: #FFFFFF;
 }
 
 button { 
@@ -146,25 +157,98 @@ button {
     color: #FFFFFF;
     }   
 
+.experiencia__botao--repo {
+    background-color: transparent;
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+}
+
+.title__bio {
+    display: flex;
+    margin: 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.title__subsection {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25.83px;
+    text-align: left;
+}
 
 .experiencie__info {
     margin: 8px;
 }
 
+.about__container {
+    width: 751px;
+    height: 250px;
+    gap: 0px;
+    opacity: 0px;
+} 
 
-
-
-/*Sección Hobbies*/
-
-section.hobbies{
-    
+.about, .formcontato {
+    display: flex;
+    background-color: #EAF2FD;
 }
 
-/* Experiencia Académica*/
-
-section.academic{
-
+.skills__box, .hobbies__box {
+    display: flex;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: 176px;
+    height: 174px;
 }
+
+.skills__box ul {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hobbies__box ul {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.academic {
+    background-color: #EAF2FD;
+}
+
+.academic__courses__box {
+    display: flex;
+    background-color: white;
+}
+
+.academic__courses__box ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.formcontato__form {
+    gap: 15px;
+}
+
+.formcontato__textarea {
+  font-family: "Raleway";
+}
+
+
+
 
 /* experiencia*/
 
