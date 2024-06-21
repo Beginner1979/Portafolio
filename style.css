@@ -19,6 +19,15 @@ body {
     line-height: 1;
 
 }
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
 ol,ul,li {
     list-style: none;
 }
@@ -128,13 +137,9 @@ section.about{
 
 .formcontato__botao {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    max-width: 150px;
 }
-
-.formcontato__input ::placeholder {
-    color: #81e4f7;
-}
-
 
 .footer {
     display: flex;
@@ -245,9 +250,14 @@ button {
 
 .formcontato__textarea {
   font-family: "Raleway";
+  min-height: 133px;
+  border: none;
 }
 
-
+.formcontato__input {
+    min-height: 56px;
+    border: none;
+}
 
 
 /* experiencia*/
